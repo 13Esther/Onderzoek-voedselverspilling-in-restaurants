@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voedselverspilling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="home">
+        <h1>Geef restaurants genoeg informatie over voedselverspilling</h1>
+        <button onclick="showSurvey()">Start</button>
+
+        <h2>Resultaten van de enquête</h2>
+        <canvas id="chart"></canvas>
+        <div id="answers"></div>
+    </section>
+
+    <section id="survey" hidden>
+        <h2>Vragenlijst</h2>
+
+        <form id="surveyForm">
+            <p>1. Bezoek je regelmatig een restaurant?</p>
+            <label><input type="radio" name="q1" value="Ja" required> Ja</label>
+            <label><input type="radio" name="q1" value="Nee"> Nee</label>
+
+            <p>2. Heb je weleens informatie gezien over voedselverspilling in een restaurant?</p>
+            <label><input type="radio" name="q2" value="Ja" required> Ja</label>
+            <label><input type="radio" name="q2" value="Nee"> Nee</label>
+
+            <p>3. Heeft een medewerker je ooit geïnformeerd over voedselverspilling of het meenemen van restjes?</p>
+            <label><input type="radio" name="q3" value="Ja" required> Ja</label>
+            <label><input type="radio" name="q3" value="Nee"> Nee</label>
+
+            <p>4. Vind je dat restaurants voldoende aandacht besteden aan communicatie over voedselverspilling?</p>
+            <label><input type="radio" name="q4" value="Ja" required> Ja</label>
+            <label><input type="radio" name="q4" value="Nee"> Nee</label>
+
+            <p>5. Krijg je voldoende informatie van restaurants om voedselverspilling te verminderen?</p>
+            <textarea name="q5" required></textarea>
+
+            <button type="submit">Verstuur antwoorden</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
